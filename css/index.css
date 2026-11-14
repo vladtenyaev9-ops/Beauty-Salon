@@ -1,0 +1,8 @@
+@import "./base/global.css";
+@import "./blocks/header.css";
+@import "./blocks/hero.css";
+@import "./blocks/offers.css";
+@import "./blocks/about.css";
+@import "./blocks/price.css";
+@import "./blocks/form.css";
+@import "./blocks/footer.css";

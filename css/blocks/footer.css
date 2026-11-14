@@ -1,0 +1,69 @@
+
+.footer {
+  border-top: 1px solid #8a6538;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-colum {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 25px;
+  font-family: "Playfair Display", Georgia, serif;
+  color: #11100f;
+}
+
+
+.footer__menu {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3a2a23;
+}
+
+.footer__menu-item {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #8a6538;
+  overflow-wrap: anywhere; 
+}
+
+a.footer__menu-item {
+  transition: color 0.3s ease;
+}
+a.footer__menu-item:hover {
+  color: #3a2a23;
+}
+
+
+@media (max-width: 1000px) {
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 24px;
+  }
+}
+
+
+@media (max-width: 560px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}

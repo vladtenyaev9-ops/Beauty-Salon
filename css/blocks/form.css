@@ -1,0 +1,151 @@
+
+.form__section {
+  background: #f9f2e8;
+  padding: 80px 0;
+}
+
+.form__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: #3a2a23;
+  border-radius: 36px;
+  padding: 48px;
+}
+
+.form__image-box,
+.form__info-box {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.form__image {
+  display: block;
+  width: 100%;
+  height: 520px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.form__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  color: #faf6f1;
+}
+
+.form__description {
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 300;
+  margin: 0 0 28px;
+  color: #dccfc2;
+}
+
+.form__forma {
+  background: #faf6f1;
+  border-radius: 24px;
+  padding: 28px;
+}
+
+.form__forma p {
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  margin: 0 0 8px;
+  color: #3a2a23;
+}
+
+.form__forma input,
+.form__forma select {
+  width: 100%;
+  min-height: 52px;
+  margin-bottom: 20px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: 1px solid #8a6538;
+  background: #fff;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3a2a23;
+}
+
+.form__forma input::placeholder {
+  color: #9a8c82;
+}
+
+.form__forma input:focus,
+.form__forma select:focus {
+  outline: 2px solid #8a6538;
+  outline-offset: 2px;
+}
+
+.form__button {
+  width: 100%;
+  margin-top: 0;
+}
+
+
+@media (max-width: 1200px) {
+  .form__content {
+    gap: 32px;
+    padding: 40px 32px;
+  }
+  .form__image {
+    height: 480px;
+  }
+  .form__title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 800px) {
+  .form__section {
+    padding: 40px 0;
+  }
+  .form__image-box {
+    display: none; 
+  }
+  .form__content {
+    flex-direction: column;
+    align-items: stretch; 
+    gap: 0;
+    padding: 32px 20px;
+    border-radius: 28px;
+  }
+  .form__info-box {
+    flex: none;
+    width: 100%;
+  }
+  .form__title {
+    font-size: 32px;
+  }
+  .form__forma {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form__content {
+    padding: 28px 16px;
+    border-radius: 24px;
+  }
+  .form__title {
+    font-size: 28px;
+  }
+}
+
+.form__forma select {
+  appearance: none;
+  -webkit-appearance: none; 
+  padding-right: 48px;      
+  cursor: pointer;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9' fill='none'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%233a2a23' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 20px center; 
+  background-size: 14px 9px;
+}
